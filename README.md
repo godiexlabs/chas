@@ -15,7 +15,7 @@ Este repositorio contiene **solo la web pública** del juego:
 - [Condiciones de uso](https://godiexlabs.github.io/chas/condiciones.html)
 
 ## Contacto
-Escríbenos a [CORREO DE CONTACTO]. Para tus datos personales o para borrar tu cuenta, consulta la [política de privacidad](privacidad.html).
+Escríbenos a godiexlabs@gmail.com. Para tus datos personales o para borrar tu cuenta, consulta la [política de privacidad](privacidad.html).
 
 ## Derechos
-© 2026 [NOMBRE DEL TITULAR]. Todos los derechos reservados. El nombre Chas, la mascota, las ilustraciones y los textos no se pueden reutilizar sin permiso.
+© 2026 Chas. Todos los derechos reservados. El nombre Chas, la mascota, las ilustraciones y los textos no se pueden reutilizar sin permiso.
