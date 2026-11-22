@@ -133,7 +133,7 @@ a:hover { color: var(--violet-800); }
 .side h2 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 22px; }
 .side ul { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 1.5; color: var(--ink-700); }
 .side-links { display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 700; }
-.doc { flex: 999 1 560px; min-width: 0; max-width: 760px; padding-top: 8px; }
+.doc { flex: 999 1 560px; min-width: 0; max-width: 760px; padding-top: 40px; }
 .doc h2 { font-family: var(--display); font-weight: 800; font-size: 1.75rem; line-height: 1.15; margin: 48px 0 12px; scroll-margin-top: 24px; }
 .doc h2:first-child { margin-top: 0; }
 .doc p, .doc li { font-size: 1.0625rem; line-height: 1.7; color: var(--ink-700); margin: 0 0 12px; }
@@ -167,3 +167,26 @@ a:hover { color: var(--violet-800); }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+/* Lista de espera */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.wait { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 520px; }
+.wait-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.wait-field { flex: 1 1 240px; min-width: 0; }
+.wait input[type="email"] { width: 100%; min-height: 52px; padding: 0 18px; border: 2px solid transparent; border-radius: 16px; background: var(--white); color: var(--ink-900); font-family: inherit; font-weight: 700; font-size: 18px; }
+.wait input[type="email"]::placeholder { color: var(--ink-500); font-weight: 400; }
+.wait input[type="email"]:focus-visible { outline: 3px solid var(--spark-300); outline-offset: 2px; }
+.wait-consent { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; line-height: 1.4; cursor: pointer; }
+.wait-consent input { flex: none; width: 22px; height: 22px; margin: 0; accent-color: var(--violet-500); }
+.on-violet .wait-consent { color: var(--white); }
+.on-violet .wait-consent a { color: var(--spark-300); }
+.on-spark .wait-consent, .on-spark .wait-consent a { color: var(--ink-900); }
+.wait-msg { margin: 0; min-height: 1.4em; font-weight: 800; font-size: 15px; }
+.on-violet .wait-msg { color: var(--spark-300); }
+.on-spark .wait-msg { color: var(--ink-900); }
+.wait.is-done .wait-row, .wait.is-done .wait-consent { display: none; }
+.wait.is-done .wait-msg { font-size: 20px; }
+.wait button[disabled] { opacity: .6; cursor: progress; }
+.nav-cta { background: var(--spark-500); color: var(--ink-900) !important; padding: 8px 16px; border-radius: 12px; }
+.nav-cta:hover { text-decoration: none !important; color: var(--ink-900) !important; }

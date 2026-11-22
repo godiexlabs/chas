@@ -6,6 +6,7 @@
 <title>Chas: Trivia con amigos</title>
 <meta name="description" content="Chas es el reto de trivia diario para jugar con tu grupo: tres preguntas, un minuto y tu racha. Muy pronto en iPhone y Android.">
 <meta name="theme-color" content="#6C3BF4">
+<meta name="robots" content="noindex, nofollow"><!-- QUITAR al publicar la web de verdad -->
 <meta property="og:title" content="Chas: Trivia con amigos">
 <meta property="og:description" content="Tres preguntas al día. Tus amigos, en la misma partida.">
 <meta property="og:image" content="assets/chas-icon.png">
@@ -25,6 +26,7 @@
       <a class="brand" href="index.html"><img src="assets/chas-icon.png" alt="" width="44" height="44"><span>Chas</span></a>
       <div class="nav-links">
         <a href="#como">Cómo se juega</a>
+        <a class="nav-cta" href="#espera">Apúntate</a>
         <a href="privacidad.html">Privacidad</a>
         <a href="condiciones.html">Condiciones</a>
       </div>
@@ -35,9 +37,16 @@
         <span class="pill">Muy pronto en iPhone y Android</span>
         <h1>Tres preguntas al día.<br>Tus amigos, en la misma partida.</h1>
         <p class="lead">Chas es el reto de trivia diario para jugar con tu grupo. Respondes en un minuto, comparas resultados y mantienes la racha.</p>
-        <div class="actions">
-          <a class="btn btn-spark" href="#pronto">Quiero jugar</a>
-          <a class="btn btn-white" href="#como">Cómo se juega</a>
+        <div id="espera">
+        <form class="wait on-violet" data-waitlist novalidate>
+          <div class="wait-row">
+            <label class="wait-field"><span class="sr">Tu correo</span><input type="email" name="email" inputmode="email" autocomplete="email" placeholder="tu@correo.com" required maxlength="254"></label>
+            <button class="btn btn-spark" type="submit">Avisadme</button>
+          </div>
+          <label class="wait-consent"><input type="checkbox" name="consent" required><span>Quiero que me avisen del lanzamiento de Chas. Tengo 16 años o más. <a href="privacidad.html#espera">Cómo usamos tu correo</a>.</span></label>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="wait-msg" role="status" aria-live="polite"></p>
+        </form>
         </div>
       </div>
 
@@ -115,13 +124,18 @@
     <div class="wrap cta">
       <img class="cta-img" src="assets/img/chas_saludo.webp" alt="Chas saludando" width="160" height="160" loading="lazy">
       <div class="cta-copy">
-        <h2 class="h2">Muy pronto en tu móvil</h2>
-        <p class="sub">Chas llegará a iPhone y Android. Gratis, con anuncios que puedes quitar con una compra única.</p>
+        <h2 class="h2">Sé de los primeros</h2>
+        <p class="sub">Deja tu correo y te avisamos el día que Chas llegue a iPhone y Android. Gratis, sin spam.</p>
       </div>
-      <div class="stores">
-        <span class="store">iPhone · Muy pronto</span>
-        <span class="store">Android · Muy pronto</span>
-      </div>
+      <form class="wait on-spark" data-waitlist novalidate>
+          <div class="wait-row">
+            <label class="wait-field"><span class="sr">Tu correo</span><input type="email" name="email" inputmode="email" autocomplete="email" placeholder="tu@correo.com" required maxlength="254"></label>
+            <button class="btn btn-violet" type="submit">Avisadme</button>
+          </div>
+          <label class="wait-consent"><input type="checkbox" name="consent" required><span>Quiero que me avisen del lanzamiento de Chas. Tengo 16 años o más. <a href="privacidad.html#espera">Cómo usamos tu correo</a>.</span></label>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="wait-msg" role="status" aria-live="polite"></p>
+        </form>
     </div>
   </section>
 </main>
@@ -141,6 +155,7 @@
   </div>
 </footer>
 
+<script src="config.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
