@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chas: Trivia con amigos</title>
+<meta name="description" content="Chas es el reto de trivia diario para jugar con tu grupo: tres preguntas, un minuto y tu racha. Muy pronto en iPhone y Android.">
+<meta name="theme-color" content="#6C3BF4">
+<meta property="og:title" content="Chas: Trivia con amigos">
+<meta property="og:description" content="Tres preguntas al día. Tus amigos, en la misma partida.">
+<meta property="og:image" content="assets/chas-icon.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/chas-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&amp;family=Nunito:wght@400;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="index.html"><img src="assets/chas-icon.png" alt="" width="44" height="44"><span>Chas</span></a>
+      <div class="nav-links">
+        <a href="#como">Cómo se juega</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="condiciones.html">Condiciones</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-copy">
+        <span class="pill">Muy pronto en iPhone y Android</span>
+        <h1>Tres preguntas al día.<br>Tus amigos, en la misma partida.</h1>
+        <p class="lead">Chas es el reto de trivia diario para jugar con tu grupo. Respondes en un minuto, comparas resultados y mantienes la racha.</p>
+        <div class="actions">
+          <a class="btn btn-spark" href="#pronto">Quiero jugar</a>
+          <a class="btn btn-white" href="#como">Cómo se juega</a>
+        </div>
+      </div>
+
+      <div class="quiz-wrap">
+        <div class="quiz" data-quiz data-answer="Júpiter">
+          <div class="quiz-head">
+            <span class="quiz-tag">Pregunta de prueba · Ciencia</span>
+            <img src="assets/img/category_science.webp" alt="" width="56" height="56">
+          </div>
+          <p class="quiz-q" id="quiz-q">¿Cuál es el planeta más grande del sistema solar?</p>
+          <div class="options" role="group" aria-labelledby="quiz-q">
+            <button class="opt" type="button" data-value="Saturno"><span>Saturno</span><span class="mark" aria-hidden="true"></span></button>
+            <button class="opt" type="button" data-value="Júpiter"><span>Júpiter</span><span class="mark" aria-hidden="true"></span></button>
+            <button class="opt" type="button" data-value="Neptuno"><span>Neptuno</span><span class="mark" aria-hidden="true"></span></button>
+            <button class="opt" type="button" data-value="La Tierra"><span>La Tierra</span><span class="mark" aria-hidden="true"></span></button>
+          </div>
+          <div class="quiz-result" hidden>
+            <p data-message aria-live="polite"></p>
+            <button class="btn-ghost" type="button" data-again>Otra vez</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="section" id="como">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2">Cómo se juega</h2>
+        <p class="sub">Un minuto al día. Sin registros: abres la app y juegas.</p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <div class="step-top"><span class="step-n" aria-hidden="true">1</span><img src="assets/img/mission_speed.webp" alt="" width="72" height="72" loading="lazy"></div>
+          <h3 class="card-title">Responde el reto del día</h3>
+          <p class="card-text">Tres preguntas, las mismas para todos. Cuanto antes aciertes, más puntos.</p>
+        </li>
+        <li class="step">
+          <div class="step-top"><span class="step-n" aria-hidden="true">2</span><img src="assets/img/podium.webp" alt="" width="72" height="72" loading="lazy"></div>
+          <h3 class="card-title">Compara con tu grupo</h3>
+          <p class="card-text">Crea un grupo con tus amigos, tu familia o tu clase y mira quién ha ganado hoy.</p>
+        </li>
+        <li class="step">
+          <div class="step-top"><span class="step-n" aria-hidden="true">3</span><img src="assets/img/trophy_season.webp" alt="" width="72" height="72" loading="lazy"></div>
+          <h3 class="card-title">Gana la temporada</h3>
+          <p class="card-text">Cada temporada dura 15 días. Los últimos valen más: hay remontada hasta el final.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap features">
+      <div class="feature f-spark">
+        <img class="feature-img" src="assets/img/streak_flame.webp" alt="" width="88" height="88" loading="lazy">
+        <h3 class="card-title">Tu racha</h3>
+        <p class="card-text">Juega cada día y no la pierdas. Si un día te falla, un escudo te cubre.</p>
+      </div>
+      <div class="feature f-violet">
+        <img class="feature-img" src="assets/img/medal_gold.webp" alt="" width="88" height="88" loading="lazy">
+        <h3 class="card-title">Insignias</h3>
+        <p class="card-text">Bronce, plata y oro por categoría: cultura, deporte, cine, ciencia y más.</p>
+      </div>
+      <div class="feature f-pink">
+        <img class="feature-img" src="assets/img/social_chat.webp" alt="" width="88" height="88" loading="lazy">
+        <h3 class="card-title">Pique sano</h3>
+        <p class="card-text">Reacciona a los resultados, da un toque a quien se ha olvidado y apuesta contra tu grupo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight" id="pronto">
+    <div class="wrap cta">
+      <img class="cta-img" src="assets/img/chas_saludo.webp" alt="Chas saludando" width="160" height="160" loading="lazy">
+      <div class="cta-copy">
+        <h2 class="h2">Muy pronto en tu móvil</h2>
+        <p class="sub">Chas llegará a iPhone y Android. Gratis, con anuncios que puedes quitar con una compra única.</p>
+      </div>
+      <div class="stores">
+        <span class="store">iPhone · Muy pronto</span>
+        <span class="store">Android · Muy pronto</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <div class="foot-brand">
+      <img src="assets/chas-icon.png" alt="" width="36" height="36">
+      <strong>Chas</strong>
+      <span>© <span data-year>2026</span> <span class="ph">[NOMBRE DEL TITULAR]</span></span>
+    </div>
+    <div class="foot-links">
+      <a href="privacidad.html">Privacidad</a>
+      <a href="condiciones.html">Condiciones</a>
+      <a href="mailto:[CORREO DE CONTACTO]">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
