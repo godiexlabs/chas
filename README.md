@@ -1,27 +1,21 @@
-# Web de Chas
+<p align="center">
+  <img src="assets/chas-icon.png" alt="Icono de Chas" width="128" height="128">
+</p>
 
-Web estática (HTML, CSS y JS, sin dependencias): portada, política de privacidad y condiciones de uso. Los textos legales salen de [docs/LEGAL.md](../docs/LEGAL.md); si cambia uno, se cambia el otro.
+<h1 align="center">Chas: Trivia con amigos</h1>
 
-| Archivo | Para qué |
-|---|---|
-| `index.html` | Portada con la pregunta de prueba |
-| `privacidad.html` | Política de privacidad: su URL va en las tiendas y en `PRIVACY_URL` de la app |
-| `condiciones.html` | Condiciones de uso: su URL va en `TERMS_URL` |
-| `styles.css` | Colores y tipos del Design System de la app |
-| `main.js` | Pregunta de prueba y año del pie |
-| `assets/` | Icono, favicon y la cara de Chas |
+<p align="center"><strong>Tres preguntas al día. Tus amigos, en la misma partida.</strong></p>
 
-## Antes de publicar
-- Rellena todo lo marcado en amarillo (`[NOMBRE O RAZÓN SOCIAL]`, `[DIRECCIÓN]`, `[CORREO DE PRIVACIDAD]`, `[CORREO DE CONTACTO]`, `[FECHA]`, `[CONFIRMAR CON ASESORÍA]`). Busca `[` en los tres HTML.
-- Que un abogado revise los textos (OD-17).
+Chas es un juego de trivia diario para jugar con tu grupo: respondes tres preguntas en un minuto, comparas resultados con tus amigos y mantienes la racha. Llegará muy pronto a iPhone y Android.
 
-## Verla en local
-```bash
-python3 -m http.server 5186 --directory web
-```
+Este repositorio contiene **solo la web pública** del juego:
 
-## Publicarla en GitHub Pages
-1. Crea un repositorio **público** solo para la web (con una cuenta u organización que no muestre tu nombre real, por ejemplo `chas-app`).
-2. Sube el **contenido** de esta carpeta (no la carpeta entera) a la raíz del repositorio, incluido `.nojekyll`.
-3. En el repositorio: **Settings → Pages → Deploy from a branch → `main` / `(root)`**.
-4. La web queda en `https://<cuenta>.github.io/<repositorio>/`. Cuando haya dominio propio, se añade en **Settings → Pages → Custom domain**.
+- [Inicio](https://[CUENTA].github.io/[REPOSITORIO]/)
+- [Política de privacidad](https://[CUENTA].github.io/[REPOSITORIO]/privacidad.html)
+- [Condiciones de uso](https://[CUENTA].github.io/[REPOSITORIO]/condiciones.html)
+
+## Contacto
+Escríbenos a [CORREO DE CONTACTO]. Para tus datos personales o para borrar tu cuenta, consulta la [política de privacidad](privacidad.html).
+
+## Derechos
+© 2026 [NOMBRE DEL TITULAR]. Todos los derechos reservados. El nombre Chas, la mascota, las ilustraciones y los textos no se pueden reutilizar sin permiso.
